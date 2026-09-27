@@ -2,11 +2,11 @@
 <html lang="bn">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 <title>Abdur Razzak Official</title>
 
-<meta name="description" content="আব্দুর রাজ্জাক - ডাইং (Dyeing) সেক্টরে কর্মরত">
+<meta name="description" content="আব্দুর রাজ্জাক — ডাইং (Dyeing) সেক্টরে কর্মরত">
 
 <style>
 *{
@@ -205,7 +205,8 @@ footer{
 id="profilePhoto"
 class="profile"
 src="file_000000005e488211811fe853af6687e6.png"
-alt="আব্দুর রাজ্জাক">
+alt="আব্দুর রাজ্জাক"
+>
 
 <h1>আব্দুর রাজ্জাক</h1>
 
@@ -215,22 +216,16 @@ alt="আব্দুর রাজ্জাক">
 
 </header>
 
-
 <nav>
-
 <a href="#about">পরিচয়</a>
-
 <a href="#work">কাজ</a>
-
 <a href="#media">Media</a>
-
 <a href="#contact">যোগাযোগ</a>
-
 </nav>
-
 
 <main class="container">
 
+<!-- পরিচয় -->
 
 <section id="about" class="card">
 
@@ -238,13 +233,16 @@ alt="আব্দুর রাজ্জাক">
 
 <p>
 আসসালামু আলাইকুম। আমি আব্দুর রাজ্জাক।
-আমি একজন সাধারণ মানুষ।
-সহজ-সরলভাবে জীবনযাপন করতে এবং মানুষের সঙ্গে ভালো সম্পর্ক বজায় রাখতে পছন্দ করি।
-এই ওয়েবসাইটের মাধ্যমে আমার পরিচয়, কাজ ও যোগাযোগের তথ্য সবার কাছে তুলে ধরার চেষ্টা করেছি।
+আমি একজন সাধারণ মানুষ। সহজ-সরলভাবে জীবনযাপন করতে
+এবং মানুষের সঙ্গে ভালো সম্পর্ক বজায় রাখতে পছন্দ করি।
+এই ওয়েবসাইটের মাধ্যমে আমার পরিচয়, কাজ ও যোগাযোগের
+তথ্য সবার কাছে তুলে ধরার চেষ্টা করেছি।
 </p>
 
 </section>
 
+
+<!-- কাজ -->
 
 <section id="work" class="card">
 
@@ -252,12 +250,17 @@ alt="আব্দুর রাজ্জাক">
 
 <p>
 আমি ডাইং (Dyeing) সেক্টরে কাজ করি।
-কাপড়ের ডাইং, প্রসেসিং, কালারিং, কোয়ালিটি ও ফিনিশিং-সংক্রান্ত কাজের সঙ্গে যুক্ত আছি।
-নিজের দায়িত্ব সততা ও আন্তরিকতার সঙ্গে পালন করার চেষ্টা করি এবং কাজের মাধ্যমে প্রতিনিয়ত নতুন কিছু শেখার চেষ্টা করি।
+কাপড়ের ডাইং, প্রসেসিং, কালারিং, কোয়ালিটি ও
+ফিনিশিং-সংক্রান্ত কাজের সঙ্গে যুক্ত আছি।
+নিজের দায়িত্ব সততা ও আন্তরিকতার সঙ্গে পালন করার
+চেষ্টা করি এবং কাজের মাধ্যমে প্রতিনিয়ত নতুন কিছু
+শেখার চেষ্টা করি।
 </p>
 
 </section>
 
+
+<!-- MEDIA -->
 
 <section id="media" class="card">
 
@@ -298,6 +301,8 @@ alt="আব্দুর রাজ্জাক">
 </div>
 
 
+<!-- ADMIN LOGIN -->
+
 <div class="admin card">
 
 <h3>🔐 Admin Login</h3>
@@ -311,12 +316,14 @@ Admin লগইন করা নেই
 
 <input
 id="adminUser"
-placeholder="Admin username">
+placeholder="Admin username"
+>
 
 <input
 id="adminPass"
 type="password"
-placeholder="Admin password">
+placeholder="Admin password"
+>
 
 <button onclick="adminLogin()">
 Login
@@ -325,17 +332,20 @@ Login
 </div>
 
 
+<!-- ADMIN PANEL -->
+
 <div id="adminPanel" class="hidden">
 
 <input
 id="mediaTitle"
-placeholder="Media title">
+placeholder="Media title"
+>
 
 <input
 id="mediaFile"
 type="file"
-accept="image/*,video/*,audio/*">
-
+accept="image/*,video/*,audio/*"
+>
 
 <div class="actions">
 
@@ -345,14 +355,15 @@ Upload / Add
 
 <button
 class="secondary"
-onclick="adminLogout()">
+onclick="adminLogout()"
+>
 Logout
 </button>
 
 </div>
 
 <p class="note">
-Demo Version: Media এই ব্রাউজারে সংরক্ষিত থাকবে।
+ডেমো মোড: ফাইল এই ব্রাউজারের Local Storage-এ থাকবে।
 </p>
 
 </div>
@@ -360,11 +371,12 @@ Demo Version: Media এই ব্রাউজারে সংরক্ষিত 
 </div>
 
 
-<div id="mediaGrid" class="media-grid">
-</div>
+<div id="mediaGrid" class="media-grid"></div>
 
 </section>
 
+
+<!-- CONTACT -->
 
 <section id="contact" class="card contact">
 
@@ -380,28 +392,21 @@ Demo Version: Media এই ব্রাউজারে সংরক্ষিত 
 
 <a
 href="https://wa.me/8801727439185"
-target="_blank">
+target="_blank"
+>
 💬 WhatsApp
 </a>
 
-<a
-href="mailto:abdurrazzak9185@gmail.com">
+<a href="mailto:abdurrazzak9185@gmail.com">
 ✉️ abdurrazzak9185@gmail.com
 </a>
 
 <a
 href="https://www.facebook.com/share/1JrFPPjiup/"
-target="_blank">
+target="_blank"
+>
 📘 Facebook
 </a>
-
-<p>
-ঠিকানা: গ্রাম- পুরান বাঁশতলা;
-ইউনিয়ন - বাংলাবাজার;
-থানা - দোয়ারাবাজার;
-জেলা - সুনামগঞ্জ;
-বিভাগ - সিলেট
-</p>
 
 </section>
 
@@ -410,722 +415,659 @@ target="_blank">
 
 <footer>
 
-© <span id="year"></span>
-Abdur Razzak Official
+© <span id="year"></span> Abdur Razzak Official
 
 </footer>
 
 
 <script>
 
-const ADMIN_USER="abdurrazzak";
+const ADMIN_USER = "abdurrazzak";
 
-const ADMIN_PASS="123456";
+const ADMIN_PASS = "123456";
+
+const visitorKey =
+"visitor_" + location.hostname;
+
+const likedKey =
+"site_liked_" + visitorKey;
+
+const followKey =
+"site_follow_" + visitorKey;
 
 
-let media=
+let media =
 JSON.parse(
-localStorage.getItem("ar_media")||"[]"
+localStorage.getItem("ar_media") || "[]"
 );
 
-
-let likes=
+let likes =
 Number(
-localStorage.getItem("ar_site_likes")||0
+localStorage.getItem("ar_site_likes") || 0
 );
 
-
-let follows=
+let follows =
 Number(
-localStorage.getItem("ar_followers")||0
+localStorage.getItem("ar_followers") || 0
 );
 
-
-let visits=
+let visits =
 Number(
-localStorage.getItem("ar_visits")||0
+localStorage.getItem("ar_visits") || 0
 );
 
 
-if(
-!sessionStorage.getItem("ar_counted")
-){
+// Visitor count
 
-visits++;
+if(!sessionStorage.getItem("ar_counted")){
 
-localStorage.setItem(
-"ar_visits",
-visits
-);
+    visits++;
 
-sessionStorage.setItem(
-"ar_counted",
-"1"
-);
+    localStorage.setItem(
+        "ar_visits",
+        visits
+    );
 
+    sessionStorage.setItem(
+        "ar_counted",
+        "1"
+    );
 }
 
 
-document.getElementById("year")
-.textContent=
+document.getElementById("year").textContent =
 new Date().getFullYear();
 
 
 function save(){
 
-localStorage.setItem(
-"ar_media",
-JSON.stringify(media)
-);
+    localStorage.setItem(
+        "ar_media",
+        JSON.stringify(media)
+    );
 
 }
 
 
-function esc(text){
+function esc(s){
 
-return String(text).replace(
-/[&<>"']/g,
-function(c){
-
-return {
-
-"&":"&amp;",
-"<":"&lt;",
-">":"&gt;",
-'"':"&quot;",
-"'":"&#039;"
-
-}[c];
-
-});
+    return String(s).replace(
+        /[&<>"']/g,
+        c => ({
+            "&":"&amp;",
+            "<":"&lt;",
+            ">":"&gt;",
+            '"':"&quot;",
+            "'":"&#039;"
+        }[c])
+    );
 
 }
 
 
 function render(){
 
-document.getElementById("siteLikes")
-.textContent=likes;
+    document.getElementById("siteLikes").textContent =
+    likes;
 
+    document.getElementById("followers").textContent =
+    follows;
 
-document.getElementById("followers")
-.textContent=follows;
+    document.getElementById("visits").textContent =
+    visits;
 
 
-document.getElementById("visits")
-.textContent=visits;
+    const grid =
+    document.getElementById("mediaGrid");
 
+    grid.innerHTML = "";
 
-const grid=
-document.getElementById("mediaGrid");
 
+    if(!media.length){
 
-grid.innerHTML="";
+        grid.innerHTML =
+        "<p>এখনো কোনো ছবি, ভিডিও বা অডিও যোগ করা হয়নি।</p>";
 
+        return;
 
-if(!media.length){
+    }
 
-grid.innerHTML=
-"<p>এখনো কোনো ছবি, ভিডিও বা অডিও যোগ করা হয়নি।</p>";
 
-return;
+    media.forEach((m,i)=>{
 
-}
+        const box =
+        document.createElement("article");
 
+        box.className = "media";
 
-media.forEach(
-(m,i)=>{
 
-const box=
-document.createElement("article");
+        let player =
+        m.type.startsWith("image/")
+        ?
+        `<img
+        src="${m.data}"
+        alt="${esc(m.title)}"
+        >`
 
+        :
 
-box.className="media";
+        m.type.startsWith("video/")
+        ?
+        `<video
+        src="${m.data}"
+        controls
+        ></video>`
 
+        :
 
-let player="";
+        m.type.startsWith("audio/")
+        ?
+        `<audio
+        src="${m.data}"
+        controls
+        ></audio>`
 
+        :
 
-if(
-m.type.startsWith("image/")
-){
+        `<p>ফাইল</p>`;
 
-player=
-`<img
-src="${m.data}"
-alt="${esc(m.title)}">`;
 
-}
+        const comments =
+        (m.comments || [])
+        .map((c,j)=>`
 
-else if(
-m.type.startsWith("video/")
-){
+        <div class="comment">
 
-player=
-`<video
-src="${m.data}"
-controls>
-</video>`;
+        <b>${esc(c.name)}</b>
 
-}
+        <br>
 
-else if(
-m.type.startsWith("audio/")
-){
+        ${esc(c.text)}
 
-player=
-`<audio
-src="${m.data}"
-controls>
-</audio>`;
+        <div class="meta">
+        ${esc(c.date)}
+        </div>
 
-}
+        ${
+            isAdmin()
+            ?
+            `<button
+            class="danger"
+            onclick="deleteComment(${i},${j})"
+            >
+            Delete
+            </button>`
+            :
+            ""
+        }
 
+        </div>
 
-const comments=
-(m.comments||[])
-.map(
-(c,j)=>
-`
-<div class="comment">
+        `).join("");
 
-<b>
-${esc(c.name)}
-</b>
 
-<br>
+        box.innerHTML = `
 
-${esc(c.text)}
+        ${player}
 
-<div class="meta">
-${esc(c.date)}
-</div>
+        <h3>
+        ${esc(m.title)}
+        </h3>
 
-${
-isAdmin()
-?
-`
-<button
-class="danger"
-onclick="deleteComment(${i},${j})">
+        <div class="meta">
+        ${esc(m.date)}
+        </div>
 
-Delete
 
-</button>
-`
-:
-""
-}
+        <div class="actions">
 
-</div>
-`
-)
-.join("");
+        <button
+        onclick="likeMedia(${i})"
+        >
+        ❤️ Like
+        <span>${m.likes || 0}</span>
+        </button>
 
 
-box.innerHTML=
+        <a
+        class="download secondary"
+        href="${m.data}"
+        download="${esc(m.title)}"
+        >
+        ⬇️ Download
+        </a>
 
-`
 
-${player}
+        ${
+            isAdmin()
+            ?
+            `<button
+            class="danger"
+            onclick="deleteMedia(${i})"
+            >
+            🗑️ Delete
+            </button>`
+            :
+            ""
+        }
 
-<h3>
-${esc(m.title)}
-</h3>
+        </div>
 
-<div class="meta">
-${esc(m.date)}
-</div>
 
+        <input
+        id="cname${i}"
+        placeholder="আপনার নাম"
+        >
 
-<div class="actions">
 
-<button
-onclick="likeMedia(${i})">
+        <textarea
+        id="ctext${i}"
+        rows="2"
+        placeholder="Comment লিখুন"
+        ></textarea>
 
-❤️ Like
-<span>
-${m.likes||0}
-</span>
 
-</button>
+        <button
+        onclick="comment(${i})"
+        >
+        💬 Comment
+        </button>
 
 
-<a
-class="download secondary"
-href="${m.data}"
-download="${esc(m.title)}">
+        <div>
+        ${comments}
+        </div>
 
-⬇️ Download
+        `;
 
-</a>
 
+        grid.appendChild(box);
 
-${
-isAdmin()
-?
-`
-<button
-class="danger"
-onclick="deleteMedia(${i})">
-
-🗑️ Delete
-
-</button>
-`
-:
-""
-}
-
-</div>
-
-
-<input
-id="cname${i}"
-placeholder="আপনার নাম">
-
-
-<textarea
-id="ctext${i}"
-rows="2"
-placeholder="Comment লিখুন">
-</textarea>
-
-
-<button
-onclick="comment(${i})">
-
-💬 Comment
-
-</button>
-
-
-<div>
-
-${comments}
-
-</div>
-
-`;
-
-
-grid.appendChild(box);
-
-});
+    });
 
 }
 
 
 function isAdmin(){
 
-return sessionStorage.getItem(
-"ar_admin"
-)==="yes";
+    return sessionStorage.getItem(
+        "ar_admin"
+    ) === "yes";
 
 }
 
 
 function adminLogin(){
 
-const u=
-document.getElementById(
-"adminUser"
-).value;
+    const u =
+    document.getElementById("adminUser").value;
 
-const p=
-document.getElementById(
-"adminPass"
-).value;
+    const p =
+    document.getElementById("adminPass").value;
 
 
-if(
-u===ADMIN_USER &&
-p===ADMIN_PASS
-){
+    if(
+        u === ADMIN_USER &&
+        p === ADMIN_PASS
+    ){
 
-sessionStorage.setItem(
-"ar_admin",
-"yes"
-);
+        sessionStorage.setItem(
+            "ar_admin",
+            "yes"
+        );
 
-updateAdmin();
+        updateAdmin();
 
-alert(
-"Admin Login সফল হয়েছে।"
-);
+        alert(
+            "Admin Login সফল হয়েছে।"
+        );
 
-}
+    }else{
 
-else{
+        alert(
+            "Username বা Password ভুল।"
+        );
 
-alert(
-"Username বা Password ভুল।"
-);
-
-}
+    }
 
 }
 
 
 function adminLogout(){
 
-sessionStorage.removeItem(
-"ar_admin"
-);
+    sessionStorage.removeItem(
+        "ar_admin"
+    );
 
-updateAdmin();
+    updateAdmin();
 
 }
 
 
 function updateAdmin(){
 
-const ok=isAdmin();
+    const ok = isAdmin();
 
 
-document.getElementById(
-"loginBox"
-)
-.classList.toggle(
-"hidden",
-ok
-);
+    document.getElementById("loginBox")
+    .classList.toggle(
+        "hidden",
+        ok
+    );
 
 
-document.getElementById(
-"adminPanel"
-)
-.classList.toggle(
-"hidden",
-!ok
-);
+    document.getElementById("adminPanel")
+    .classList.toggle(
+        "hidden",
+        !ok
+    );
 
 
-document.getElementById(
-"adminStatus"
-)
-.textContent=
-
-ok
-?
-"✅ Admin লগইন করা আছে"
-:
-"Admin লগইন করা নেই";
+    document.getElementById("adminStatus")
+    .textContent =
+    ok
+    ?
+    "✅ Admin লগইন করা আছে"
+    :
+    "Admin লগইন করা নেই";
 
 
-render();
+    render();
 
 }
 
 
 function addMedia(){
 
-if(!isAdmin()){
+    if(!isAdmin()){
 
-alert(
-"Admin Login করুন।"
-);
+        return alert(
+            "Admin Login করুন।"
+        );
 
-return;
-
-}
+    }
 
 
-const file=
-document.getElementById(
-"mediaFile"
-).files[0];
+    const file =
+    document.getElementById("mediaFile")
+    .files[0];
 
 
-if(!file){
+    if(!file){
 
-alert(
-"একটি ছবি, ভিডিও অথবা অডিও নির্বাচন করুন।"
-);
+        return alert(
+            "একটি ছবি, ভিডিও বা অডিও নির্বাচন করুন।"
+        );
 
-return;
-
-}
+    }
 
 
-if(
-file.size >
-15*1024*1024
-){
+    if(
+        file.size >
+        15 * 1024 * 1024
+    ){
 
-alert(
-"Demo Version-এ সর্বোচ্চ 15 MB ফাইল ব্যবহার করুন।"
-);
+        return alert(
+            "ডেমো মোডে সর্বোচ্চ 15 MB ফাইল ব্যবহার করুন।"
+        );
 
-return;
-
-}
+    }
 
 
-const reader=
-new FileReader();
+    const reader =
+    new FileReader();
 
 
-reader.onload=function(){
+    reader.onload = ()=>{
 
-media.unshift({
+        media.unshift({
 
-title:
-document.getElementById(
-"mediaTitle"
-).value
-||
-file.name,
+            title:
+            document.getElementById(
+                "mediaTitle"
+            ).value || file.name,
 
-type:file.type,
+            type:file.type,
 
-data:reader.result,
+            data:reader.result,
 
-date:
-new Date()
-.toLocaleString("bn-BD"),
+            date:
+            new Date().toLocaleString(
+                "bn-BD"
+            ),
 
-likes:0,
+            likes:0,
 
-comments:[]
+            comments:[]
 
-});
-
-
-save();
+        });
 
 
-document.getElementById(
-"mediaFile"
-).value="";
+        save();
 
 
-document.getElementById(
-"mediaTitle"
-).value="";
+        document.getElementById(
+            "mediaFile"
+        ).value = "";
 
 
-render();
+        document.getElementById(
+            "mediaTitle"
+        ).value = "";
 
-};
+
+        render();
+
+    };
 
 
-reader.readAsDataURL(file);
+    reader.readAsDataURL(file);
 
 }
 
 
 function deleteMedia(i){
 
-if(
-confirm(
-"এই Media মুছে ফেলতে চান?"
-)
-){
+    if(
+        confirm(
+            "এই Media মুছে ফেলতে চান?"
+        )
+    ){
 
-media.splice(i,1);
+        media.splice(i,1);
 
-save();
+        save();
 
-render();
+        render();
 
-}
+    }
 
 }
 
 
 function likeMedia(i){
 
-media[i].likes=
-(media[i].likes||0)+1;
+    media[i].likes =
+    (media[i].likes || 0) + 1;
 
-save();
+    save();
 
-render();
+    render();
 
 }
 
 
 function comment(i){
 
-const name=
-document.getElementById(
-"cname"+i
-).value.trim()
-||
-"Visitor";
+    const name =
+    document.getElementById(
+        "cname" + i
+    ).value.trim() || "Visitor";
 
 
-const text=
-document.getElementById(
-"ctext"+i
-).value.trim();
+    const text =
+    document.getElementById(
+        "ctext" + i
+    ).value.trim();
 
 
-if(!text){
+    if(!text){
 
-alert(
-"Comment লিখুন।"
-);
+        return alert(
+            "Comment লিখুন।"
+        );
 
-return;
-
-}
+    }
 
 
-media[i].comments=
-media[i].comments||[];
+    media[i].comments =
+    media[i].comments || [];
 
 
-media[i].comments.push({
+    media[i].comments.push({
 
-name:name,
+        name,
 
-text:text,
+        text,
 
-date:
-new Date()
-.toLocaleString("bn-BD")
+        date:
+        new Date().toLocaleString(
+            "bn-BD"
+        )
 
-});
+    });
 
 
-save();
+    save();
 
-render();
+    render();
 
 }
 
 
 function deleteComment(i,j){
 
-if(
-confirm(
-"এই Comment মুছে ফেলবেন?"
-)
-){
+    if(
+        confirm(
+            "এই Comment মুছে ফেলবেন?"
+        )
+    ){
 
-media[i].comments.splice(
-j,
-1
-);
+        media[i].comments.splice(
+            j,
+            1
+        );
 
-save();
+        save();
 
-render();
+        render();
 
-}
+    }
 
 }
 
 
 function toggleSiteLike(){
 
-if(
-localStorage.getItem(
-"ar_liked"
-)
-){
+    if(
+        localStorage.getItem(
+            likedKey
+        )
+    ){
 
-likes--;
+        likes--;
 
-localStorage.removeItem(
-"ar_liked"
-);
+        localStorage.removeItem(
+            likedKey
+        );
 
-}
+    }else{
 
-else{
+        likes++;
 
-likes++;
+        localStorage.setItem(
+            likedKey,
+            "1"
+        );
 
-localStorage.setItem(
-"ar_liked",
-"1"
-);
-
-}
+    }
 
 
-localStorage.setItem(
-"ar_site_likes",
-likes
-);
+    localStorage.setItem(
+        "ar_site_likes",
+        likes
+    );
 
-render();
+
+    render();
 
 }
 
 
 function toggleFollow(){
 
-if(
-localStorage.getItem(
-"ar_followed"
-)
-){
+    if(
+        localStorage.getItem(
+            followKey
+        )
+    ){
 
-follows--;
+        follows--;
 
-localStorage.removeItem(
-"ar_followed"
-);
+        localStorage.removeItem(
+            followKey
+        );
 
-}
+    }else{
 
-else{
+        follows++;
 
-follows++;
+        localStorage.setItem(
+            followKey,
+            "1"
+        );
 
-localStorage.setItem(
-"ar_followers",
-follows
-);
+    }
 
-localStorage.setItem(
-"ar_followed",
-"1"
-);
 
-}
+    localStorage.setItem(
+        "ar_followers",
+        follows
+    );
 
-localStorage.setItem(
-"ar_followers",
-follows
-);
 
-render();
+    render();
 
 }
 
 
 function shareSite(){
 
-if(navigator.share){
+    if(navigator.share){
 
-navigator.share({
+        navigator.share({
 
-title:
-"Abdur Razzak Official",
+            title:
+            "Abdur Razzak Official",
 
-url:
-location.href
+            url:
+            location.href
 
-});
+        });
 
-}
+    }else{
 
-else{
+        navigator.clipboard
+        .writeText(location.href)
+        .then(()=>{
 
-navigator.clipboard
-.writeText(location.href)
-.then(
-()=>alert(
-"Website link কপি হয়েছে।"
-)
-);
+            alert(
+                "Website link কপি হয়েছে।"
+            );
 
-}
+        });
+
+    }
 
 }
 
